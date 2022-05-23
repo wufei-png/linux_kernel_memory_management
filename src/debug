@@ -1,0 +1,14 @@
+rmmod mtest
+make clean 
+make all
+insmod mtest.ko
+dmesg -c
+
+rmmod maptest
+make clean 
+make all
+insmod maptest.ko
+dmesg -c
+
+
+dmesg
